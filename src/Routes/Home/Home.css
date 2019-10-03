@@ -1,0 +1,140 @@
+.Container{
+    flex:1;
+    background-color: #191927;
+    float: none;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+h1{
+    color: #ff6e85;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.Form{
+    border: 1px solid #ff6e85;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 35px;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 18px;
+}
+
+.FormSubmited {
+    border: 1px solid #ff6e85;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 35px;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+    animation-name: down;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+form{
+    animation-name: form;
+    animation-duration: 1000ms;
+}
+
+form input:nth-child(3) {
+    animation-name: move;
+    animation-duration: 1300ms;
+    animation-delay: 150ms;
+    animation-fill-mode: backwards;
+}
+form input:nth-child(5) {
+    animation-name: move;
+    animation-duration: 1300ms;
+    animation-delay: 400ms;
+    animation-fill-mode: backwards;
+}
+form input:nth-child(7) {
+    animation-name: move;
+    animation-duration: 1300ms;
+    animation-delay: 650ms;
+    animation-fill-mode: backwards;
+}
+
+form button {
+    animation-name: move;
+    animation-duration: 1300ms;
+    animation-delay: 550ms;
+    animation-fill-mode: backwards;
+}
+
+.Title{
+    color:#ff6e85;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+input{
+    border: 1px solid rgba(255, 110, 133, 0.9);
+    background-color: transparent;
+    padding: 8px;
+    color: #ff6e85;
+    width: 90%;
+    margin-left: 10px;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+input::placeholder{
+
+    color: #ff6e85;
+    
+}
+
+button{
+    display: block;
+    min-width: 200px;
+    border: none;
+    background-color: #ff6e85;
+    color: white;
+    border-radius: 25px;
+    margin: 25px auto;
+    margin-bottom: 0;
+    padding: 7px;
+}
+
+/*Animations*/
+@keyframes form {
+    from {
+        opacity: 0;
+        transform: scale(0.1)
+        
+    }
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+@keyframes down {
+    from {
+        opacity: 1;
+        transform: scale(1)
+        
+    }
+    to {
+        opacity: 0;
+        transform: scale(0)
+    }
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translate(-35%);
+        
+    }
+    to {
+        opacity: 1;
+        transform: translate(0%);
+    }
+}
+
+
